@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 72px;
+     
+    display: flex;
+    align-items: center;
+    font-family: Okra, Helvetica, sans-serif;
+    color: #ffffff;
+}
+.app{
+    width:50%;
+    color: white;
+    font-size: 15px; 
+    padding-bottom:9px
+}
+.app a{
+    padding-left:138px;
+     
+}
+.list{
+    width: 50%;
+    font-family: Okra, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 19.2px;
+}
+.list ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+    padding-left: 34px;
+}
+.backgrnd{
+    height: 569px;
+    overflow: hidden;
+    margin-top: -148px;
+    margin-left: -47px;
+}
+.backgrnd img{
+    float: left;
+}
+.content{
+    position: absolute;
+    top: 102px;
+    left: 276px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content img{
+    width: 300px;
+    height: 60px;
+}
+.content h1{
+    font-size: 2.2rem;
+    font-weight: 100;
+    margin: 30px 0;
+    letter-spacing: 2px;
+}
+.search{
+    display:flex;
+    align-items: center;
+    background: #fff;
+    height: 3.4rem;
+    width: 100%;
+    border-radius: 8px;
+}
+.search .leftsearch,.search .rightsearch{
+    display: inline-flex;
+    padding: 0 1rem;
+    
+}
+.search .leftsearch{
+    width: 30%;
+    border-right: 2px solid  rgb(199, 195, 195);
+}
+.search .rightsearch{
+    width: 70%;
+}
+ 
+.search input{
+    border: 0;
+    font-size: 15px;
+    outline: none;
+    background: transparent;
+    color: grey;
+    width: 100%;
+}
+.search .leftsearch i{
+    color: rgb(240,125,125);
+    font-size: 20px;
+    padding-right: 5px;
+}
+.search .leftsearch #tri{
+    color: grey;
+     
+}
+.search .rightsearch i{
+    color:  grey ;
+    font-size: 20px;
+    padding-right: 5px;
+}
+.order{
+    width: 87%;
+    margin: 27px auto;
+    display: flex;
+    justify-content: center;
+     
+}
+.order .card {
+    width: 30%;
+    margin: 12px;
+    border-radius: 8px;
+    border: 1px solid rgb(194, 191, 191);
+    transition: transform 0.3s;
+    position: relative;
+    cursor: pointer;
+}
+.order .card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.order .cardlist{
+    text-align: left;
+    width: 92%;
+    padding: 0 15px;
+    position: absolute;
+    bottom: -22px;
+    background: white;
+    border: 1px solid  rgb(199, 195, 195);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-left: -1px;
+}
+.order .cardlist .heading{
+    font-size: 20px;
+    color: #363636;
+    margin: 10px 0px;
+}
+.order .cardlist .text{
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(106, 99, 99);
+    margin: 15px 0;
+}
+.order .card:hover{
+    width:31%;
+}
+.collections {
+    width: 82%;
+    margin: 100px auto;
+    text-align: center;
+}
+.collections h2 {
+    text-align: left;
+    font-size: 36px;
+    color: #1c1c1c;
+    font-weight: lighter;
+}
+.des {
+    display: flex;
+    justify-content: space-between;
+}
+.collections .title{
+    margin-bottom: 8px;
+}
+.collections p {
+    text-align: left;
+    font-size: 18px;
+    color: #363636;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.des .all{
+    color: rgba(255, 0, 0, 0.511);
+    font-weight: 300;
+}
+.collectionpart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.collectionpart .collection{
+    width: 270px;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+    margin: 12px 0px;
+    cursor: pointer;
+}
+.collection img {
+    width: 100%;
+    height: 100%;
+}
+.collectionpart .collection .card1{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.collectionpart .collection .card1 p{
+    color: white;
+    font-weight: 100;
+    font-size: 18px;
+    margin: 3px 7px;
+}
+.localities{
+    width: 82%;
+    margin: auto;
+}
+
+.localities h1 {
+    color: #363636;
+    font-size: 36px;
+    font-weight: lighter;
+    text-align: start;
+    margin-bottom: 32px;
+}
+.localities h1 span {
+    color:  #363636;
+    font-weight: bold;
+}
+.locations{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.locations .box{
+    width: 29%;
+    background: white;
+    border: 1px solid rgb(239, 234, 234);
+    margin: 10px 8px;
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 1.42623px 2.85246px; 
+    cursor: pointer;
+}
+.locations #box{
+    display: flex;
+    justify-content: center;
+}
+
+.locations .box .place{
+    font-size: 16px;
+    padding: 8px 0;
+}
+.locations .box p{
+    color: #1c1c1c;
+}
+.locations .box i{
+    color: rgb(20, 18, 18);
+}
+.locations .box .city{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.getapp{
+    margin-top: 70px;
+    width: 100%;
+    background: #f8ebdc23;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.getapp .theapp{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    transform: translateX(50px);
+}
+.getapp .theapp .appimage{
+    width: 40%;
+}
+.theapp .appimage img{
+    width: 117%;
+}
+.theapp .apptext{
+    padding-top: 20px;
+    width: 60%;
+    margin-left: 45px;
+}
+.theapp .apptext h2{
+    font-size: 44px;
+    font-weight: lighter;
+    margin-bottom: 25px;
+    color: #1c1c1c;
+}
+.theapp .apptext p{
+    width: 68%;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    color: #363636;
+}
+.email-phone{
+    color: #363636;
+}
+.theapp .apptext .email-phone input[type=radio] {
+    accent-color: rgb(234, 25, 25);
+    cursor: pointer;
+}
+.theapp .apptext .email-phone input {
+    margin-bottom: 30px;
+    transition: transform 0.5s;
+}
+.submit input {
+    width: 60%;
+    padding: 15px 8px;
+    border: 0;
+    outline: none;
+    border: 1px solid rgb(202, 197, 197);
+    border-radius: 7px;
+    margin-right: 3px;
+    font-size: 15px;
+}
+.submit button {
+    color: white;
+    background-color: red;
+    width: 21%;
+    padding: 15px 8px;
+    border: 0;
+    outline: none;
+    border: 1px solid red;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+}
+ .theapp .apptext .download p {
+    color: #9c9c9c;
+    font-size: 15px;
+    padding: 10px 0;
+}
+.app-store img {
+    margin: -10px 8px;
+    width: 150px;
+}
+.explore{
+    width: 80%;
+    margin: auto;
+    margin-top: -57px;
+}
+.explore h1{
+    color: rgba(26, 25, 30, 0.712);
+    font-weight: 100;
+    margin-top: 50px;
+}
+.explore .options{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.explore .options .boxes{
+    width: 96%;
+    background: white;
+    border: 1px solid hsla(0, 7%, 76%, 0.401);
+    margin: 10px 12px;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.explore .options .boxes a,i{
+    font-size: 20px;
+    color: #1c1c1c;
+}
+footer{
+    margin-top: 40px;
+    width: 100%;
+    height: 500px;
+    background-color: rgba(237, 236, 236, 0.299);
+    position: relative;
+}
+footer .footer{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    position: relative;
+}
+footer .footer .image img {
+    width: 130px;
+    position: absolute;
+    left: 10%;
+    top: 50px;
+}
+footer .footer-btn {
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 50px;
+    gap: 19px;
+    width: 271px;
+}
+.footer-btn .btn-india {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    color: #1c1c1c;
+    font-weight: lighter;
+    border-radius: 5px;
+    border: 1px solid rgba(126, 109, 109, 0.619);
+    background: rgba(253, 250, 250, 0.925);
+    cursor: pointer;
+}
+.footer-btn .btn-india img {
+    width: 20px;
+}
+.footer-btn .btn-lang {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    color: #1c1c1c;
+    font-weight: lighter;
+    border-radius: 5px;
+    border: 1px solid rgba(192, 188, 188, 0.619);
+    background: rgba(253, 250, 250, 0.925);
+    cursor: pointer;
+}
+.footer-link {
+    width: 80%;
+    margin-left: 140px;
+    margin-top: 120px;
+    transition: transform 0.5s;
+    margin-bottom: 60px;
+}
+.footer-link .column {
+    width: 100%;
+    display: flex;
+    gap: 95px;
+}
+.column   p {
+    font-size: 14px;
+    font-weight: 550;
+    color: #000000;
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+.col-link li {
+    margin-top: 10px;
+    list-style: none;
+    font-size: 14.9px;
+    color: #696969;
+}
+.col-link {
+    padding: 0;
+}
+ .col-link li a{
+    color: #696969;
+}
+.social {
+    display: flex;
+    flex-direction: column;
+}
+.social .icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.social .icon i {
+    background-color: black;
+    color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 3px 0px 0px 1px;
+    cursor: pointer;
+}
+.social .store img {
+    width: 140px;
+    display: flex;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.line {
+    width: 80%;
+    height: 1px;
+    background-color: rgba(50, 53, 53, 0.197);
+    margin: auto;
+}
+.End {
+    width: 100%;
+    margin-top: 20px;
+    
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    font-weight: lighter;
+    color: rgba(128, 128, 128, 0.652);
+}
+.End p{
+    color: #4f4f4f;
+    margin-left: 140px;
+}
